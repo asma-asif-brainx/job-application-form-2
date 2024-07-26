@@ -56,8 +56,11 @@
 
             <div class="address-group">
                 <div class="address-feilds">
-                    <label>Address</label>
-                    <input id="address" name="address">
+                    <div class="address-1">
+                        <label>Address</label>
+                        <input id="address" name="address">
+                     </div>
+
                     <span id="add1">Address 1</span>
                     <input id="address2" name="address2">
                     <span id="add2">Address 2</span>
@@ -74,26 +77,32 @@
                     </select>
                 </div>
 
+                <span id="country-span">Country</span>
+
+
                 <div class="city-group">
-                    <input id="city" name="city">
-                    <input id="state" name="state">
-                    <input id="zip" name="zip">
-    
-                    <span id="city-label">City</span>
-                    <span id="state-label">State</span>
-                    <span id="state-label">State</span>
+                    <div class="city-feilds">
+                        <input id="city" name="city">
+                        <input id="state" name="state">
+                        <input id="zip" name="zip">
+                    </div>
+                    <div class="city-span">
+                        <span id="city-label">City</span>
+                        <span id="state-label">State</span>
+                        <span id="zip-label">Zip Code</span>
+                    </div>
                 </div>
              </div>
 
            
 
-            <div class="form-group">
+            <div class="phone-group">
                 <label>Phone Number</label>
                 <input id="phCode" name="phCode">
                 <input id="phNo" name="phNo">
             </div>
 
-            <div class="form-group">
+            <div class="hobby-group">
                 <label for="hobby">What are your hobbies?</label>
                 <input id="hobby" name="hobby">
             </div>
@@ -102,45 +111,50 @@
         <h2 id="precious-head">Previous/Current Employment Details</h2>
 
         <form id="employee-details">
-            <div class="form-group company-name">
-                <label id="company-label">Company Name</label>
-                <input id="company-name" name="company-name">
-            </div>
+            <div class="employee-details-group">
+                <div class="company-group">
+                    <label id="company-label">Company Name</label>
+                    <input id="company-name" name="company-name">
+                </div>
 
-            <div class="form-group job-title">
-                <label>Job Title</label>
-                <input id="job-title" name="job-title">
-            </div>
+                <div class="job-group">
+                    <label>Job Title</label>
+                    <input id="job-title" name="job-title">
+                </div>
 
-            <div class="form-group emp-stay">
-                <label>How long were you here?</label>
-                <input id="emp-stay" name="emp-stay">
+                <div class="emp-stay-group">
+                    <label>How long were you</label>
+                    <input id="emp-stay" name="emp-stay">
+                    <br>
+                    <label>here?</label>
+                </div>
             </div>
         </form>
 
-        <h2 style="color:darkred">Reference #1</h2>
+        <h2 class="ref-1">Reference #1</h2>
 
         <form id="reference-1">
-            <div class="form-group">
+
+            <div class="ref-1-name-group">
                 <label>Name</label>
                 <input id="name-1" name="name-1">
             </div>
 
-            <div class="form-group">
+            <div class="ref-1-phone-group">
                 <label>Phone</label>
                 <input id="phone-1" name="phone-1">
             </div>
         </form>
 
-        <h2 style="color:darkred">Reference #2</h2>
+        <h2 class="ref-2">Reference #2</h2>
 
         <form id="reference-2">
-            <div class="form-group">
+            <div class="ref-2-name-group">
                 <label>Name</label>
                 <input id="name-2" name="name-2">
             </div>
 
-            <div class="form-group">
+            <div class="ref-2-phone-group">
                 <label>Phone</label>
                 <input id="phone-2" name="phone-2">
             </div>

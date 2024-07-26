@@ -12,6 +12,7 @@ input{
     margin-left:25%;
     margin-right:25%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-bottom: 20px;
 }
 
 .top-border{
@@ -111,7 +112,6 @@ input{
     padding-left: 10px;
     font-weight: 540;
     margin-bottom: 20px;
-
 }
 
 .education-group option {
@@ -171,3 +171,274 @@ input{
 }
 
 
+
+
+.address-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+}
+
+.address-feilds {
+    display: flex;
+    flex-direction: column;
+}
+
+.address-1{
+    display:inline;
+}
+.address-feilds label, .country-feilds label {
+    margin-left:10px;
+    margin-right: 151px; 
+}
+
+.address-feilds input#address {
+    width:420px;
+}
+
+#add1{
+    font-size:10px;
+    margin-left: 400px;
+}
+
+.address-feilds input#address2 {
+    width:420px;
+    margin-left: 229px;
+}
+
+#add2{
+    font-size:10px;
+    margin-left: 400px;
+}
+
+
+.country-feilds{
+    align-items: center;
+}
+.country-feilds label{
+    margin-left:10px;
+    margin-right: 149px; 
+}
+
+#country{
+    width:420px;
+    height: 30px;
+    padding-left: 10px;
+    font-weight: 540;
+}
+
+
+
+ .custom-select-container2 {
+    position: relative;
+    display: inline-block;
+}
+.custom-select-container2 select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+}
+.custom-select-container2::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent; 
+    border-right: 7px solid transparent; 
+    border-top: 7px solid black;
+    transform: translateY(-50%) rotate(1deg) translateX(-200%);
+}
+
+
+#country-span{
+    font-size:10px;
+    margin-left: 405px;
+}
+
+
+
+
+.city-group{
+    flex-direction: column;
+}
+
+
+
+.city-feilds{
+    margin-bottom:0;
+}
+
+#city{
+    margin-left:225px;
+    width:260px;
+}
+
+#state{
+    width:50px;
+}
+
+#zip{
+    width: 80px;
+}
+
+
+#city-label{
+    font-size: 10px;  
+    margin-left: 360px;
+}
+
+#state-label{
+    font-size: 10px;  
+    margin-left: 130px;
+}
+
+#zip-label{
+    font-size: 10px;  
+    margin-left: 35px;
+}
+
+
+.phone-group {
+    display: inline;
+    align-items: center;
+}
+
+.phone-group label {
+    margin-left:10px;
+    margin-right: 90px; 
+}
+
+#phNo{
+    width: 380px;
+    height: 30px ;
+    margin-bottom: 20px;
+}
+
+
+#phCode{
+    width: 45px;
+    height: 30px ;
+    margin-bottom: 20px;
+}
+
+
+.hobby-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.hobby-group label {
+    margin-left:10px;
+    margin-right: 90px; 
+    margin-bottom: 5px;
+}
+
+.hobby-group input {
+    max-width:100%;
+    margin-left:10px;
+    margin-right:10px;
+}
+
+
+#precious-head{
+    color:darkred;
+    margin-bottom: 35px;
+    margin-left:10px;
+
+}
+
+
+
+.employee-details-group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+
+.company-group label,
+.job-group label,
+.emp-stay-group label {
+    margin-left:10px;
+}
+
+
+.company-group label{
+    margin-right: 80px;
+}
+
+.job-group label{
+    margin-right: 140px;
+}
+.emp-stay-group label{
+    margin-right: 54px;
+}
+
+
+.company-group input{
+    width: 400px;
+    }
+.job-group input{
+  width: 400px;
+}
+.emp-stay-group input {
+     width: 390px;
+}
+
+
+.ref-1-name-group label, .ref-1-phone-group label, .ref-2-phone-group label , .ref-2-name-group label{
+    margin-left:10px;
+
+}
+
+.ref-1-name-group label{
+    margin-right:163px;
+}
+
+.ref-1-phone-group label{
+    margin-right:161px;
+}
+
+.ref-2-phone-group label{
+    margin-right:161px;
+}
+
+.ref-2-name-group label{
+ margin-right:163px;
+}   
+
+#phone-1, #phone-2, #name-1, #name-2{
+    width: 400px;
+}
+
+
+.ref-1-name-group , .ref-1-phone-group , .ref-2-phone-group  , .ref-2-name-group
+{
+    margin-bottom: 20px;
+}
+
+
+
+.ref-1, .ref-2{
+  color:darkred;
+  margin-left:10px;
+}
+
+
+#apply{
+    width: 100px;
+    height: 40px;
+    color: white;
+    background-color: darkred;
+    border-radius: 3px;
+    font-size:15px;
+    margin:auto;
+  display:block;
+}
