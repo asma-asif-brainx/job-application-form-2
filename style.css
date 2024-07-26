@@ -1,0 +1,173 @@
+
+body{
+    font-family: 'verdana';
+}
+input{
+    height:24px;
+}
+
+.form-container{
+    width:50%;
+    height: auto;
+    margin-left:25%;
+    margin-right:25%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.top-border{
+    background-color: darkred;
+    max-width:100%;
+    height: 20px;
+}
+
+.main-head{
+    text-align: center;
+    font-weight: bold;
+}
+
+.personal-info-head{
+    color:darkred;
+    padding-left: 10px;
+}
+
+.name-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.name-feilds {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.name-feilds label {
+    margin-left:10px;
+    margin-right: 180px; 
+}
+
+.name-feilds input#fname {
+    margin-right: 15px;
+    width: 190px;
+}
+
+.name-feilds input#lname {
+    width: 190px;
+}
+
+.name-span {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name-span span {
+    display: inline-block;
+    font-size:10px;
+    margin-bottom:20px;
+}
+
+.name-span span#first{
+    margin-left:236px;
+    flex:20%;
+}
+
+.name-span span#last{
+    margin-right:201px;
+    float:right;
+}
+
+
+
+.email-group {
+    display: inline;
+    align-items: center;
+}
+
+.email-group label {
+    margin-left:10px;
+    margin-right: 175px; 
+}
+
+.email-group input#email {
+    width: 370px;
+    margin-bottom: 20px;
+}
+
+
+
+.education-group {
+    display: inline;
+    align-items: center;
+}
+
+.education-group label {
+    margin-left:10px;
+    margin-right: 147px; 
+}
+
+.education-group select {
+    width:300px;
+    height: 30px;
+    padding-left: 10px;
+    font-weight: 540;
+    margin-bottom: 20px;
+
+}
+
+.education-group option {
+    padding: 8px;
+}
+
+
+.custom-select-container {
+    position: relative;
+    display: inline-block;
+    font-family: Arial, sans-serif; 
+}
+
+.custom-select-container select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+}
+
+.custom-select-container::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 12px; 
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent; 
+    border-right: 7px solid transparent; 
+    border-top: 7px solid black; 
+    transform: translateY(-165%) rotate(1deg); 
+}
+
+.resume-group {
+    display: inline;
+    align-items: center;
+}
+
+.resume-group label {
+    margin-left:10px;
+    margin-right: 153px; 
+}
+
+.resume-group input[type="file"] {
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #fff;
+    padding:5px;
+    width:400px;
+    color:rgb(146, 141, 141);
+    margin-bottom: 20px;
+}
+
+
