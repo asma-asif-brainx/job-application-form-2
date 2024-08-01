@@ -8,161 +8,165 @@
     <title>Job Application form</title>
 </head>
 
-<body>
-    <div class="form-container">
+<body class="container">
+    
+    <div class="main-container">
 
-        <hr class="top-border"></hr>
+        <div class="form-container">
 
-        <h1 class="main-head">Job Application</h1>
+            <hr class="top-border"></hr>
 
-        <h2 class="personal-info-head">Personal Information</h2>
+            <h1 class="main-head">Job Application</h1>
 
-        <form id="personal-information">
+            <h2 class="personal-info-head">Personal Information</h2>
 
-            <div class="name-group">
-                <div class="name-feilds">
-                    <label for="fname">Name</label>
-                    <input id="fname" type="text" name="fname">
-                    <input id="lname" type="text" name="lname">
-                </div>  
-                <div class="name-span">
-                    <span id="first">First Name</span>
-                    <span id="last">Last Name</span>
+            <form id="personal-information">
+
+                <div class="name-group">
+                    <div class="name-feilds">
+                        <label for="fname">Name</label>
+                        <input id="fname" type="text" name="fname">
+                        <input id="lname" type="text" name="lname">
+                    </div>  
+                    <div class="name-span">
+                        <span id="first">First Name</span>
+                        <span id="last">Last Name</span>
+                    </div>
                 </div>
-            </div>
-            
+                
 
-            <div class="email-group">
-                <label for="email">Email</label>
-                <input type="text" id="email" name="email" placeholder="user@example.com">
-            </div>
-
-
-            <div class="education-group custom-select-container">
-                <label for="education">Education</label>
-                <select id="education" name="edu">
-                    <option value="none" selected>Please Choose</option>
-                    <option value="BSSE">BSSE</option>
-                    <option value="BSCS">BSCS</option>
-                    <option value="BSIT">BSIT</option>
-                    <option value="BSDS">BSDS</option>
-                </select>
-            </div>
-
-            <div class="resume-group">
-                <label for="resume">Resume</label>
-                <input id="resume" name="resume" type="file">
-            </div>
-
-            <div class="address-group">
-                <div class="address-feilds">
-                    <div class="address-1">
-                        <label>Address</label>
-                        <input id="address" name="address">
-                     </div>
-
-                    <span id="add1">Address 1</span>
-                    <input id="address2" name="address2">
-                    <span id="add2">Address 2</span>
+                <div class="email-group">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="user@example.com">
                 </div>
 
-                <div class="country-feilds custom-select-container2">
-                    <label id="count">Country</label>
-                    <select id="country" name="country">
-                        <option value="none" selected>Select a Country</option>
-                        <option value="Pakistan">Pakistan</option>
-                        <option value="India">India</option>
-                        <option value="China">China</option>
-                        <option value="Turkey">Turkey</option>
+
+                <div class="education-group custom-select-container">
+                    <label for="education">Education</label>
+                    <select id="education" name="edu">
+                        <option value="none" selected>Please Choose</option>
+                        <option value="BSSE">BSSE</option>
+                        <option value="BSCS">BSCS</option>
+                        <option value="BSIT">BSIT</option>
+                        <option value="BSDS">BSDS</option>
                     </select>
                 </div>
 
-                <span id="country-span">Country</span>
+                <div class="resume-group">
+                    <label for="resume">Resume</label>
+                    <input id="resume" name="resume" type="file">
+                </div>
 
+                <div class="address-group">
+                    <div class="address-feilds">
+                        <div class="address-1">
+                            <label>Address</label>
+                            <input id="address" name="address">
+                        </div>
 
-                <div class="city-group">
-                    <div class="city-feilds">
-                        <input id="city" name="city">
-                        <input id="state" name="state">
-                        <input id="zip" name="zip">
+                        <span id="add1">Address 1</span>
+                        <input id="address2" name="address2">
+                        <span id="add2">Address 2</span>
                     </div>
-                    <div class="city-span">
-                        <span id="city-label">City</span>
-                        <span id="state-label">State</span>
-                        <span id="zip-label">Zip Code</span>
+
+                    <div class="country-feilds custom-select-container2">
+                        <label id="count">Country</label>
+                        <select id="country" name="country">
+                            <option value="none" selected>Select a Country</option>
+                            <option value="Pakistan">Pakistan</option>
+                            <option value="India">India</option>
+                            <option value="China">China</option>
+                            <option value="Turkey">Turkey</option>
+                        </select>
+                    </div>
+
+                    <span id="country-span">Country</span>
+
+
+                    <div class="city-group">
+                        <div class="city-feilds">
+                            <input id="city" name="city">
+                            <input id="state" name="state">
+                            <input id="zip" name="zip">
+                        </div>
+                        <div class="city-span">
+                            <span id="city-label">City</span>
+                            <span id="state-label">State</span>
+                            <span id="zip-label">Zip Code</span>
+                        </div>
                     </div>
                 </div>
-             </div>
 
-           
+            
 
-            <div class="phone-group">
-                <label>Phone Number</label>
-                <input id="phCode" name="phCode">
-                <input id="phNo" name="phNo">
-            </div>
-
-            <div class="hobby-group">
-                <label for="hobby">What are your hobbies?</label>
-                <input id="hobby" name="hobby">
-            </div>
-        </form>
-
-        <h2 id="precious-head">Previous/Current Employment Details</h2>
-
-        <form id="employee-details">
-            <div class="employee-details-group">
-                <div class="company-group">
-                    <label id="company-label">Company Name</label>
-                    <input id="company-name" name="company-name">
+                <div class="phone-group">
+                    <label>Phone Number</label>
+                    <input id="phCode" name="phCode">
+                    <input id="phNo" name="phNo">
                 </div>
 
-                <div class="job-group">
-                    <label>Job Title</label>
-                    <input id="job-title" name="job-title">
+                <div class="hobby-group">
+                    <label for="hobby">What are your hobbies?</label>
+                    <input id="hobby" name="hobby">
+                </div>
+            </form>
+
+            <h2 id="precious-head">Previous/Current Employment Details</h2>
+
+            <form id="employee-details">
+                <div class="employee-details-group">
+                    <div class="company-group">
+                        <label id="company-label">Company Name</label>
+                        <input id="company-name" name="company-name">
+                    </div>
+
+                    <div class="job-group">
+                        <label>Job Title</label>
+                        <input id="job-title" name="job-title">
+                    </div>
+
+                    <div class="emp-stay-group">
+                        <label>How long were you</label>
+                        <input id="emp-stay" name="emp-stay">
+                        <br>
+                        <label>here?</label>
+                    </div>
+                </div>
+            </form>
+
+            <h2 class="ref-1">Reference #1</h2>
+
+            <form id="reference-1">
+
+                <div class="ref-1-name-group">
+                    <label>Name</label>
+                    <input id="name-1" name="name-1">
                 </div>
 
-                <div class="emp-stay-group">
-                    <label>How long were you</label>
-                    <input id="emp-stay" name="emp-stay">
-                    <br>
-                    <label>here?</label>
+                <div class="ref-1-phone-group">
+                    <label>Phone</label>
+                    <input id="phone-1" name="phone-1">
                 </div>
-            </div>
-        </form>
+            </form>
 
-        <h2 class="ref-1">Reference #1</h2>
+            <h2 class="ref-2">Reference #2</h2>
 
-        <form id="reference-1">
+            <form id="reference-2">
+                <div class="ref-2-name-group">
+                    <label>Name</label>
+                    <input id="name-2" name="name-2">
+                </div>
 
-            <div class="ref-1-name-group">
-                <label>Name</label>
-                <input id="name-1" name="name-1">
-            </div>
+                <div class="ref-2-phone-group">
+                    <label>Phone</label>
+                    <input id="phone-2" name="phone-2">
+                </div>
 
-            <div class="ref-1-phone-group">
-                <label>Phone</label>
-                <input id="phone-1" name="phone-1">
-            </div>
-        </form>
-
-        <h2 class="ref-2">Reference #2</h2>
-
-        <form id="reference-2">
-            <div class="ref-2-name-group">
-                <label>Name</label>
-                <input id="name-2" name="name-2">
-            </div>
-
-            <div class="ref-2-phone-group">
-                <label>Phone</label>
-                <input id="phone-2" name="phone-2">
-            </div>
-
-            <div class="form-group">
-                <button id="apply">Apply</button>
-            </div>
-        </form>
+                <div class="form-group">
+                    <button id="apply">Apply</button>
+                </div>
+            </form>
+        </div>
     </div>
 </body>
 </html>

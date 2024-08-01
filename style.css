@@ -1,24 +1,37 @@
 
-body{
+.container{
     font-family: 'verdana';
 }
 input{
-    height:24px;
+    min-height: 24px;
+    height:100%;
+}
+
+.main-container{
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .form-container{
-    width:50%;
+    display: flex;
+    justify-content: center; 
+    flex-direction: column; 
+    max-width:50%;
+    width: 100%;
     height: auto;
-    margin-left:25%;
-    margin-right:25%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding-bottom: 20px;
+    padding-bottom: 20px; 
 }
 
 .top-border{
     background-color: darkred;
     max-width:100%;
-    height: 20px;
+    width: 100%;
+    min-height: 20px;
+    height: 100%;
 }
 
 .main-head{
@@ -49,11 +62,13 @@ input{
 
 .name-feilds input#fname {
     margin-right: 15px;
-    width: 190px;
+    max-width:190px ;
+    width: 100%;
 }
 
 .name-feilds input#lname {
-    width: 190px;
+    max-width:190px;
+    width: 100%;
 }
 
 .name-span {
@@ -90,7 +105,8 @@ input{
 }
 
 .email-group input#email {
-    width: 370px;
+    max-width: 370px;
+    width: 100%;
     margin-bottom: 20px;
 }
 
@@ -165,13 +181,11 @@ input{
     font-size: 16px;
     background-color: #fff;
     padding:5px;
-    width:400px;
+    max-width:400px;
+    width: 100%;
     color:rgb(146, 141, 141);
     margin-bottom: 20px;
 }
-
-
-
 
 .address-group {
     display: flex;
@@ -194,7 +208,8 @@ input{
 }
 
 .address-feilds input#address {
-    width:420px;
+    max-width: 420px;
+    width: 100%;
 }
 
 #add1{
@@ -203,7 +218,8 @@ input{
 }
 
 .address-feilds input#address2 {
-    width:420px;
+    max-width: 420px;
+    width: 100%;
     margin-left: 225px;
 }
 
@@ -222,8 +238,10 @@ input{
 }
 
 #country{
-    width:420px;
-    height: 30px;
+    max-width: 420px;
+    width: 100%;
+    min-height: 30px;
+    height: 100%;
     padding-left: 10px;
     font-weight: 540;
 }
@@ -277,15 +295,18 @@ input{
 
 #city{
     margin-left:225px;
-    width:260px;
+    max-width: 260px;
+    width: 100%;
 }
 
 #state{
-    width:50px;
+    max-width: 50px;
+    width:100%;
 }
 
 #zip{
-    width: 80px;
+    max-width: 80px;
+    width:100%;
 }
 
 
@@ -316,14 +337,16 @@ input{
 }
 
 #phNo{
-    width: 380px;
+    max-width: 380px;
+    width:100%;
     height: 30px ;
     margin-bottom: 20px;
 }
 
 
 #phCode{
-    width: 45px;
+    max-width: 45px;
+    width:100%;
     height: 30px ;
     margin-bottom: 20px;
 }
@@ -383,13 +406,16 @@ input{
 
 
 .company-group input{
-    width: 400px;
+    max-width: 400px;
+    width:100%;
     }
 .job-group input{
-  width: 400px;
+    max-width: 400px;
+    width:100%;
 }
 .emp-stay-group input {
-     width: 390px;
+    max-width: 390px;
+    width:100%;
 }
 
 
@@ -415,8 +441,10 @@ input{
 }   
 
 #phone-1, #phone-2, #name-1, #name-2{
-    width: 400px;
+    max-width: 400px;
+    width:100%;
 }
+    
 
 
 .ref-1-name-group , .ref-1-phone-group , .ref-2-phone-group  , .ref-2-name-group
@@ -433,12 +461,17 @@ input{
 
 
 #apply{
-    width: 100px;
-    height: 40px;
+    max-width: 100px;
+    width:100%;    height: 40px;
     color: white;
     background-color: darkred;
     border-radius: 3px;
     font-size:15px;
     margin:auto;
-  display:block;
+    display:block;
 }
+
+
+/* @media screen and (max-width){
+
+} */
