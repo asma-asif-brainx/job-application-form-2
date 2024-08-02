@@ -2,7 +2,7 @@
     font-family: 'verdana';
 }
 
-input{
+.input-block-height{
     min-height: 24px;
     height:100%;
 }
@@ -24,6 +24,12 @@ input{
     height: auto;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding-bottom: 20px; 
+}
+
+.line-break
+{
+    opacity: 0;
+    margin: auto;
 }
 
 .top-border{
@@ -59,6 +65,7 @@ input{
     column-gap:10px;
     padding-left: 170px;
 }
+
 .name-feilds input#fname {
     max-width:210px ;
     width: 100%;
@@ -105,7 +112,6 @@ input{
     width: 100%;
 }
 
-
 .education-group {
     display: flex;
     flex-direction: row;
@@ -113,6 +119,7 @@ input{
     padding-left: 10px;
     padding-bottom: 25px;
 }
+
 .education-label{
     padding-right: 140px;
 }
@@ -123,7 +130,7 @@ input{
     min-height: 30px;
     height: 100%;
     padding-left: 10px;
-    font-weight: 540;
+    font-weight: 500;
 }
 
 .education-group option {
@@ -153,9 +160,8 @@ input{
     right: 190px; 
     width: 0;
     height: 0;
-    border-left: 7px solid transparent; 
-    border-right: 7px solid transparent; 
-    border-top: 7px solid black; 
+    border: 7px solid transparent;
+    border-top-color: black;
     transform: translateY(-15px) rotate(1deg); 
 }
 
@@ -181,7 +187,6 @@ input{
     width: 100%;
     color:rgb(146, 141, 141);
 }
-
 
 .address-group {
     display: flex;
@@ -218,14 +223,8 @@ input{
     padding-left:218px;
 }
 
-
-
 .country-feilds{
     padding-left: 218px;
-}
-.country-feilds label{
-    margin-left:10px;
-    margin-right: 145px; 
 }
 
 .select-country{
@@ -234,13 +233,14 @@ input{
     min-height: 30px;
     height: 100%;
     padding-left: 10px;
-    font-weight: 540;
+    font-weight: 500;
 }
 
  .custom-select-container2 {
     position: relative;
     display: inline-block;
 }
+
 .custom-select-container2 select {
     appearance: none;
     -webkit-appearance: none;
@@ -251,18 +251,17 @@ input{
     cursor: pointer;
     outline: none;
 }
+
 .custom-select-container2::after {
     content: '';
     position: absolute;
     top: 50%;
     width: 0;
     height: 0;
-    border-left: 7px solid transparent; 
-    border-right: 7px solid transparent; 
-    border-top: 7px solid black;
-    transform: translateY(-50%) rotate(1deg) translateX(-200%);
+    border: 7px solid transparent;
+    border-top-color: black;
+    transform: translateY(-35%) rotate(1deg) translateX(-200%);
 }
-
 
 .city-group{
     display: flex;
@@ -293,7 +292,6 @@ input{
     width:100%;
 }
 
-
 .city-span-group{
     text-align: right;
     padding-top: 0;
@@ -316,7 +314,6 @@ input{
     padding-right: 95px;
 }
 
-
 .phone-group {
     display: flex;
     align-items: center;
@@ -332,13 +329,11 @@ input{
 .phNo{
     max-width: 365px;
     width:100%;
-    height: 30px ;
 }
 
 .phCode{
     max-width: 45px;
     width:100%;
-    height: 30px ;
 }
 
 .hobby-group {
@@ -353,22 +348,18 @@ input{
 
 .hobby-desc{
     padding-left: 10px;
-
 }
+
 .hobby{
     max-width:95%;
     width: 100%;
 }
 
-
 #precious-head{
     color:darkred;
-    margin-bottom: 35px;
-    margin-left:10px;
-
+    padding-bottom: 25px;
+    padding-left:10px;
 }
-
-
 
 .employee-details-group {
     display: flex;
@@ -376,24 +367,21 @@ input{
     gap: 20px; 
 }
 
-
 .company-label, .job-label, .emp-stay-label, .emp-stay-here {
     padding-left: 10px;
 }
 
 .company-label{
     padding-right: 80px;
-
 }
 
 .job-label{
     padding-right: 138px;
-
 }
+
 .emp-stay-label
 {
     padding-right: 52px;
-
 }
 
 .company-name{
@@ -405,16 +393,17 @@ input{
     max-width: 400px;
     width:100%;
 }
+
 .emp-stay {
     max-width: 390px;
     width:100%;
 }
 
-
 .first-reference-form{
     display: flex;
     flex-direction: column;
 }
+
 .first-ref-name-group , .second-ref-name-group, .first-ref-phone-group , .second-ref-phone-group{
     padding-left: 10px;
 }
@@ -423,6 +412,7 @@ input{
     max-width: 400px;
     width:100%;
 }
+
 .name-first-label, .name-second-label{
     padding-right: 160px;
 }
@@ -430,14 +420,16 @@ input{
 .phone-first-label, .phone-second-label{
     padding-right: 157px;
 }
+
 .reference-first-head, .reference-second-head{
   color:darkred;
-  margin-left:10px;
+  padding-left:10px;
 }
 
 .first-ref-name-group, .second-ref-name-group, .first-ref-phone-group, .second-ref-phone-group{
     padding-bottom: 25px;
 }
+
 .apply{
     max-width: 100px;
     width:100%; 
@@ -451,7 +443,6 @@ input{
     display:block;
 }
 
-
 @media screen and (max-width:1280px){
     .name-group {
         display: flex;
@@ -463,7 +454,6 @@ input{
         align-items: center;
         margin-bottom: 0;
         padding-left: 10px ;
-        
     }
     
     .name-feilds label {
@@ -506,8 +496,7 @@ input{
     }
     
     .name-span span#first{
-        flex:20%;
-        
+        flex:20%;    
     }
 
     .email-group input#email {
@@ -518,8 +507,8 @@ input{
     .select-education {
         max-width:250px;
         width: 100%;
-
     }
+
     .education-label{
         padding-right: 142px;
     }
@@ -527,7 +516,6 @@ input{
     .custom-select-container::after {
         transform: translateY(-15px) rotate(1deg); 
         right: 180px; 
-
     }
 
     .resume-group input[type="file"] {
@@ -545,7 +533,6 @@ input{
         width: 100%;
     }
     
-
     .city{
         max-width: 210px;
         width: 100%;
@@ -590,12 +577,13 @@ input{
     .company-name{
         max-width: 380px;
         width:100%;
-        }
+    }
         
     .job-title{
         max-width: 380px;
         width:100%;
     }
+
     .emp-stay {
         max-width: 360px;
         width:100%;
@@ -606,7 +594,6 @@ input{
         width:100%;
     }
 }
-
 
 @media screen and (max-width:980px){    
     .name-feilds label {
@@ -620,9 +607,9 @@ input{
         column-gap: 15px;
         max-width: 450px;
         width: 100%;
-        padding-left: 100px;
-       
+        padding-left: 100px;     
     }
+
     .name-span {
         padding-right: 130px;
     }
@@ -643,7 +630,7 @@ input{
     .custom-select-container::after {
         right: 130px; 
     }
-    
+
     .resume-label{
         padding-right: 45px;
     }
@@ -729,6 +716,7 @@ input{
         max-width: 270px;
         width:100%;
     }
+
     .emp-stay {
         max-width: 270px;
         width:100%;
@@ -906,5 +894,3 @@ input{
         width:100%;
     }
 }
-
-
