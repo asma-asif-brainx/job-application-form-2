@@ -25,8 +25,12 @@
                 <div class="name-group">
                     <div class="name-feilds">
                         <label for="fname">Name</label>
-                        <input id="fname" type="text" name="fname">
-                        <input id="lname" type="text" name="lname">
+                         
+                        <div class="name-input">
+                            <input id="fname" type="text" name="fname">
+                            <input id="lname" type="text" name="lname">
+                        </div>
+                         
                     </div>  
                     <div class="name-span">
                         <span id="first">First Name</span>
@@ -36,14 +40,14 @@
                 
 
                 <div class="email-group">
-                    <label for="email">Email</label>
+                    <label class="email-label" for="email">Email</label>
                     <input type="text" id="email" name="email" placeholder="user@example.com">
                 </div>
 
 
                 <div class="education-group custom-select-container">
-                    <label for="education">Education</label>
-                    <select id="education" name="edu">
+                    <label class="education-label" for="select-education">Education</label>
+                    <select class="select-education" name="edu">
                         <option value="none" selected>Please Choose</option>
                         <option value="BSSE">BSSE</option>
                         <option value="BSCS">BSCS</option>
@@ -53,25 +57,25 @@
                 </div>
 
                 <div class="resume-group">
-                    <label for="resume">Resume</label>
+                    <label class="resume-label" for="resume">Resume</label>
                     <input id="resume" name="resume" type="file">
                 </div>
 
                 <div class="address-group">
                     <div class="address-feilds">
-                        <div class="address-1">
-                            <label>Address</label>
-                            <input id="address" name="address">
+                        <div class="first-address">
+                            <label class="address-label">Address</label>
+                            <input class="first-address-name" name="first-address-name">
                         </div>
-
-                        <span id="add1">Address 1</span>
-                        <input id="address2" name="address2">
-                        <span id="add2">Address 2</span>
+                        <span class="first-address-span">Address 1</span>
+                        <div class="second-address-block">
+                            <input class="second-address-name" name="second-address-name">
+                        </div> 
+                        <span class="second-address-span">Address 2</span>
                     </div>
 
                     <div class="country-feilds custom-select-container2">
-                        <label id="count">Country</label>
-                        <select id="country" name="country">
+                        <select class="select-country" name="country">
                             <option value="none" selected>Select a Country</option>
                             <option value="Pakistan">Pakistan</option>
                             <option value="India">India</option>
@@ -80,19 +84,19 @@
                         </select>
                     </div>
 
-                    <span id="country-span">Country</span>
+                    <span class="country-span">Country</span>
 
 
                     <div class="city-group">
                         <div class="city-feilds">
-                            <input id="city" name="city">
-                            <input id="state" name="state">
-                            <input id="zip" name="zip">
+                            <input class="city" name="city">
+                            <input class="state" name="state">
+                            <input class="zip" name="zip">
                         </div>
-                        <div class="city-span">
-                            <span id="city-label">City</span>
-                            <span id="state-label">State</span>
-                            <span id="zip-label">Zip Code</span>
+                        <div class="city-span-group">
+                            <span class="city-span">City</span>
+                            <span class="state-span">State</span>
+                            <span class="zip-span">Zip Code</span>
                         </div>
                     </div>
                 </div>
@@ -100,70 +104,72 @@
             
 
                 <div class="phone-group">
-                    <label>Phone Number</label>
-                    <input id="phCode" name="phCode">
-                    <input id="phNo" name="phNo">
+                    <label class="phone-label">Phone Number</label>
+                    <input class="phCode" name="phCode">
+                    <input class="phNo" name="phNo">
                 </div>
 
                 <div class="hobby-group">
-                    <label for="hobby">What are your hobbies?</label>
-                    <input id="hobby" name="hobby">
+                    <label class="hobby-label" for="hobby">What are your hobbies?</label>
+                    <div class="hobby-desc">
+                        <input class="hobby" name="hobby">
+                    </div>
                 </div>
             </form>
 
             <h2 id="precious-head">Previous/Current Employment Details</h2>
 
-            <form id="employee-details">
+            <form class="employee-details">
                 <div class="employee-details-group">
                     <div class="company-group">
-                        <label id="company-label">Company Name</label>
-                        <input id="company-name" name="company-name">
+                        <label class="company-label">Company Name</label>
+                        <input class="company-name" name="company-name">
                     </div>
 
                     <div class="job-group">
-                        <label>Job Title</label>
-                        <input id="job-title" name="job-title">
+                        <label class="job-label">Job Title</label>
+                        <input class="job-title" name="job-title">
                     </div>
 
                     <div class="emp-stay-group">
-                        <label>How long were you</label>
-                        <input id="emp-stay" name="emp-stay">
+                        <label class="emp-stay-label">How long were you</label>
+                        <input class="emp-stay" name="emp-stay">
                         <br>
-                        <label>here?</label>
+                        <label class="emp-stay-here">here?</label>
                     </div>
                 </div>
             </form>
 
-            <h2 class="ref-1">Reference #1</h2>
+            <h2 class="reference-first-head">Reference #1</h2>
 
-            <form id="reference-1">
+            <form class="first-reference-form">
 
-                <div class="ref-1-name-group">
-                    <label>Name</label>
-                    <input id="name-1" name="name-1">
+                <div class="first-ref-name-group">
+                    <label class="name-first-label">Name</label>
+                    <input class="name-first" name="name-first">
                 </div>
 
-                <div class="ref-1-phone-group">
-                    <label>Phone</label>
-                    <input id="phone-1" name="phone-1">
+                <div class="first-ref-phone-group">
+                    <label class="phone-first-label">Phone</label>
+                    <input class="phone-first" name="phone-first">
                 </div>
             </form>
 
-            <h2 class="ref-2">Reference #2</h2>
+            <h2 class="reference-second-head">Reference #2</h2>
 
-            <form id="reference-2">
-                <div class="ref-2-name-group">
-                    <label>Name</label>
-                    <input id="name-2" name="name-2">
+            <form class="second-reference-form">
+                <div class="second-ref-name-group">
+                    <label class="name-second-label">Name</label>
+                    <input class="name-second" name="name-second">
                 </div>
 
-                <div class="ref-2-phone-group">
-                    <label>Phone</label>
-                    <input id="phone-2" name="phone-2">
+                <div class="second-ref-phone-group">
+                    <label class="phone-second-label"> Phone</label>
+                    <input class="phone-second" name="phone-second">
                 </div>
 
                 <div class="form-group">
-                    <button id="apply">Apply</button>
+                    <button class="apply">Apply</button>
                 </div>
             </form>
         </div>
