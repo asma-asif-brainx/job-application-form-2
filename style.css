@@ -51,6 +51,7 @@
 }
 
 .name-feilds {
+    position: relative;
     display: flex;
     align-items: center;
     margin-bottom: 0;
@@ -66,6 +67,17 @@
     padding-left: 170px;
 }
 
+.first-name-group-span, .second-name-group-span{
+    display: flex;
+    flex-direction: column;
+    min-height: 60px;
+    height: 100%;
+}
+
+.first-name-group-span #first, .second-name-group-span #last{
+    text-align: left;
+}
+
 .name-feilds input#fname {
     max-width:210px ;
     width: 100%;
@@ -76,23 +88,8 @@
     width: 100%;
 }
 
-.name-span {
-    display: flex;
-    flex-direction:row; 
-    min-height: 30px;
-    height: 100%;
-    column-gap: 175px;
-    text-align: end;
-    padding-right: 195px;
-    padding-left: 0;
-}
-
-.name-span span {
+.first-name-group-span #first, .second-name-group-span #last{
     font-size:10px;
-}
-
-.name-span span#first{
-    flex:20%;
 }
 
 .email-group {
@@ -137,9 +134,10 @@
     padding: 8px;
 }
 
+
+
 .custom-select-container {
     position: relative;
-    font-family: Arial, sans-serif; 
 }
 
 .custom-select-container select {
@@ -163,7 +161,7 @@
     border: 7px solid transparent;
     border-top-color: black;
     transform: translateY(-15px) rotate(1deg); 
-}
+} 
 
 .resume-group {
     display: flex;    
@@ -196,6 +194,16 @@
 .address-feilds {
     display: flex;
     flex-direction: column;
+    position: relative;
+}
+
+.address-span-block{
+    display: flex;
+    flex-direction: column;
+}
+
+.address-span-block .first-address-span, .address-span-block .second-address-span, .address-span-block .country-span{
+    text-align: center;
 }
 
 .first-address{
@@ -215,8 +223,6 @@
 
 .first-address-span, .second-address-span, .country-span{
     font-size:10px;
-    text-align: center;
-    padding-left: 150px;
 }
 
 .second-address-block{
@@ -263,6 +269,17 @@
     transform: translateY(-35%) rotate(1deg) translateX(-200%);
 }
 
+.country-name-span-group
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.country-name-span-group .country-span
+{
+    text-align: center;
+}
+
 .city-group{
     display: flex;
     flex-direction: column;
@@ -273,7 +290,7 @@
     flex-direction: row;
     align-items: center;
     margin-bottom:0;
-    column-gap: 7px;
+    column-gap: 15px;
     padding-left: 218px;
 }
 
@@ -291,27 +308,25 @@
     max-width: 80px;
     width:100%;
 }
+.city-name-span-group , .state-name-span-group, .zip-name-span-group{
+    display: flex;
+    flex-direction: column;
+}
 
-.city-span-group{
-    text-align: right;
-    padding-top: 0;
-    margin-top: 0;
-    line-height: 10px;
+.city-name-span-group .city-span , .state-name-span-group .state-span, .zip-name-span-group .zip-span{
+    text-align: center;
 }
 
 .city-span{
     font-size: 10px; 
-    padding-right: 135px;  
 }
 
 .state-span{
     font-size: 10px;  
-    padding-right: 35px; 
 }
 
 .zip-span{
     font-size: 10px;  
-    padding-right: 95px;
 }
 
 .phone-group {
@@ -444,6 +459,10 @@
 }
 
 @media screen and (max-width:1280px){
+    .form-container{
+        max-width: 65%;
+        width: 100%;
+    }
     .name-group {
         display: flex;
         flex-direction: column;
@@ -481,24 +500,6 @@
         width: 100%;
     }
     
-    .name-span {
-        display: flex;
-        flex-direction:row; 
-        min-height: 30px;
-        height: 100%;
-        column-gap: 128px;
-        text-align: end;
-        padding-right: 170px;
-    }
-    
-    .name-span span {
-        font-size:10px;
-    }
-    
-    .name-span span#first{
-        flex:20%;    
-    }
-
     .email-group input#email {
         max-width: 300px;
         width: 100%;
@@ -548,18 +549,6 @@
         width:100%;
     }
 
-    .city-span{
-        padding-right: 125px;  
-    }
-    
-    .state-span{
-        padding-right: 35px; 
-    }
-    
-    .zip-span{
-        padding-right: 68px;
-    }
-    
     .phone-label {
         padding-right: 80px;
     }
@@ -596,6 +585,11 @@
 }
 
 @media screen and (max-width:980px){    
+    .form-container{
+        max-width:70%;
+        width: 100%;
+    }
+
     .name-feilds label {
         max-width: 5px ;
         width: 100%;
@@ -608,10 +602,6 @@
         max-width: 450px;
         width: 100%;
         padding-left: 100px;     
-    }
-
-    .name-span {
-        padding-right: 130px;
     }
     
     .email-label{
@@ -654,10 +644,6 @@
         padding-left:118px;
     }
 
-    .first-address-span, .second-address-span, .country-span{
-        padding-left: 100px;
-    }
-
     .country-feilds{
         padding-left: 118px;
     }
@@ -674,10 +660,6 @@
     .city{
         max-width: 160px;
         width: 100%;
-    }
-
-    .city-span{
-        padding-right: 85px;  
     }
 
     .phone-label {
@@ -740,43 +722,33 @@
     .container{
         font-size: 12px;
     }   
-    
+    .form-container{
+        max-width:99%;
+        width: 100%;
+    }
+  
     .name-input{
         padding-left: 60px;
        
     }
 
     .name-feilds input#fname {
-        max-width:130px ;
+        max-width:115px ;
         width: 100%;
     }
 
     .name-feilds input#lname {
-        max-width:130px;
+        max-width:115px;
         width: 100%;
     }
 
-    .name-span{
-        column-gap: 5px;
-    }
-
-    #first{
-        padding-left: 76px;
-        font-size: 6px;
-    }
-    
-    #last{
-        padding-left: 125px;
-        padding-right: 0px;
-        font-size: 6px;
-    }
 
     .email-label{
         padding-right: 30px;
     }
 
     .email-group input#email {
-        max-width: 265px;
+        max-width: 245px;
         width: 100%;
     }
 
@@ -785,7 +757,7 @@
     }
 
     .select-education {
-        max-width:180px;
+        max-width:220px;
         width: 100%;
     }
     
@@ -793,7 +765,7 @@
         padding-right: 15px;
     }
     .resume-group input[type="file"] {
-        max-width:270px;
+        max-width:250px;
         width: 100%;
     }
 
@@ -803,7 +775,7 @@
     }
 
     .first-address-name, .second-address-name{
-        max-width: 280px;
+        max-width: 250px;
         width: 100%;
     }
 
@@ -811,16 +783,12 @@
         padding-left:75px;
     }
 
-    .first-address-span, .second-address-span, .country-span{
-        padding-left: 70px;
-    }
-
     .country-feilds{
         padding-left: 75px;
     }
 
     .select-country{
-        max-width: 280px;
+        max-width: 250px;
         width: 100%;
     }
 
@@ -829,20 +797,19 @@
     }
 
     .city{
+        position: relative;
         max-width: 130px;
         width: 100%;
     }
-
-    .city-span{
-        padding-right: 75px;  
+    .zip{
+        position: relative;
+        max-width: 50px;
+        width:100%;
     }
-
-    .state-span{
-        padding-right: 35px; 
-    }
-    
-    .zip-span{
-        padding-right: 40px;
+    .state{
+        position: relative;
+        max-width: 30px;
+        width:100%;
     }
 
     .phone-label {
@@ -850,7 +817,7 @@
     }
 
     .phNo{
-        max-width: 200px;
+        max-width: 170px;
         width:100%;
     }
     
@@ -894,3 +861,4 @@
         width:100%;
     }
 }
+

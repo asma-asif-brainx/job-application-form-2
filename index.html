@@ -16,20 +16,21 @@
             <h1 class="main-head">Job Application</h1>
             <h2 class="personal-info-head">Personal Information</h2>
             <form id="personal-information">
+
                 <div class="name-group">
                     <div class="name-feilds">
-                        <label for="fname">Name</label>
-                         
+                        <label for="fname">Name</label>        
                         <div class="name-input">
-                            <input class="input-block-height" id="fname" type="text" name="fname">
-                            <input class="input-block-height" id="lname" type="text" name="lname">
-                        </div>
-                         
+                            <div class="first-name-group-span">
+                                <input class="input-block-height" id="fname" type="text" name="fname">
+                                <span id="first">First Name</span>
+                            </div>
+                            <div class="second-name-group-span">
+                                <input class="input-block-height" id="lname" type="text" name="lname">
+                                <span id="last">Last Name</span>
+                            </div>
+                        </div>       
                     </div>  
-                    <div class="name-span">
-                        <span id="first">First Name</span>
-                        <span id="last">Last Name</span>
-                    </div>
                 </div>
                 
                 <div class="email-group">
@@ -59,36 +60,49 @@
                             <label class="address-label">Address</label>
                             <input class="first-address-name input-block-height" name="first-address-name">
                         </div>
-                        <span class="first-address-span">Address 1</span>
-                        <div class="second-address-block">
-                            <input  class="second-address-name input-block-height" name="second-address-name">
-                        </div> 
-                        <span class="second-address-span">Address 2</span>
+
+                        <div class="address-span-block">
+                            <span class="first-address-span">Address 1</span>
+                            <div class="second-address-block">
+                                <input  class="second-address-name input-block-height" name="second-address-name">
+                            </div> 
+                                <span class="second-address-span">Address 2</span>
+                        </div>
                     </div>
 
-                    <div class="country-feilds custom-select-container2">
-                        <select class="select-country" name="country">
-                            <option value="none" selected>Select a Country</option>
-                            <option value="Pakistan">Pakistan</option>
-                            <option value="India">India</option>
-                            <option value="China">China</option>
-                            <option value="Turkey">Turkey</option>
-                        </select>
-                    </div>
+                    <div class="country-name-span-group">
+                            <div class="country-feilds custom-select-container2">
+                                <select class="select-country" name="country">
+                                    <option value="none" selected>Select a Country</option>
+                                    <option value="Pakistan">Pakistan</option>
+                                    <option value="India">India</option>
+                                    <option value="China">China</option>
+                                    <option value="Turkey">Turkey</option>
+                                </select>
+                            </div>
 
-                    <span class="country-span">Country</span>
+                    
+                            <span class="country-span">Country</span>
+                    </div>
 
                     <div class="city-group">
                         <div class="city-feilds">
-                            <input  class="city input-block-height" name="city">
-                            <input class="state input-block-height" name="state">
-                            <input class="zip input-block-height" name="zip">
+
+                            <div class="city-name-span-group">
+                                <input  class="city input-block-height" name="city">
+                                <span class="city-span">City</span>
+                            </div>
+                            <div class="state-name-span-group">
+                                <input class="state input-block-height" name="state">
+                                <span class="state-span">State</span>
+                            </div>
+                            <div class="zip-name-span-group">
+                                <input class="zip input-block-height" name="zip">
+                                <span class="zip-span">Zip Code</span>
+                            </div>
+
                         </div>
-                        <div class="city-span-group">
-                            <span class="city-span">City</span>
-                            <span class="state-span">State</span>
-                            <span class="zip-span">Zip Code</span>
-                        </div>
+
                     </div>
                 </div>
 
