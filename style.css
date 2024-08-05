@@ -62,7 +62,7 @@
     display: flex;
     align-items: center;
     margin-bottom: 0;
-    gap: 180px; 
+    gap: 182px; 
 }
 
 .name-input
@@ -379,19 +379,19 @@
 .company-group
 {
     display: flex;
-    gap: 110px;
+    gap: 100px;
 }
 
 .job-group
 {
     display: flex;
-    gap: 170px;
+    gap: 160px;
 }
 
 .emp-stay-group-feilds
 {
     display: flex;
-    gap: 70px;
+    gap: 62px;
 }
 
 .emp-stay-label{
@@ -402,7 +402,7 @@
 
 .company-name, .job-title
 {
-    max-width: 360px;
+    max-width: 378px;
     width:100%;
 }
 
@@ -418,10 +418,16 @@
     flex-direction: column;
 }
 
-.first-ref-name-group , .second-ref-name-group, .first-ref-phone-group , .second-ref-phone-group
+.first-ref-name-group , .second-ref-name-group
 {
     display: flex;
-    gap:185px;
+    gap:180px;
+    text-indent: 10px;
+}
+
+.first-ref-phone-group , .second-ref-phone-group{
+    display: flex;
+    gap:177px;
     text-indent: 10px;
 }
 
@@ -493,7 +499,7 @@
         height:100%;
     }
     .name-feilds{
-        gap:60px;
+        gap:58px;
     }
     .name-feilds input#fname, .name-feilds input#lname{
         min-width: 0;
@@ -575,25 +581,28 @@
         width: 100%;
     }
     .company-group{
-        gap:18px;
+        gap:13px;
     }
     .job-group{
-        gap:50px;
+        gap:47px;
     }
     .emp-stay-group-feilds{
-        gap: 3px;
+        gap: 0px;
     }
     .company-name, .job-title{
-        max-width: 190px;
+        max-width: 220px;
         width: 100%;
     }
     .emp-stay{
-        max-width: 185px;
+        max-width: 205px;
         width: 100%;
     }
-    .first-ref-name-group, .second-ref-name-group, .first-ref-phone-group, .second-ref-phone-group
+    .first-ref-name-group, .second-ref-name-group
     {
         gap:50px;
+    }
+    .first-ref-phone-group, .second-ref-phone-group{
+        gap:48px;
     }
     .phone-first, .phone-second, .name-first, .name-second
     {
