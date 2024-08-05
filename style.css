@@ -1,13 +1,16 @@
-.container{
+.container
+{
     font-family: 'verdana';
 }
 
-.input-block-height{
+.input-block-height
+{
     min-height: 24px;
     height:100%;
 }
 
-.main-container{
+.main-container
+{
     max-width: 100%;
     width: 100%;
     display: flex;
@@ -15,7 +18,8 @@
     align-items: center;
 }
 
-.form-container{
+.form-container
+{
     display: flex;
     justify-content: center; 
     flex-direction: column; 
@@ -23,7 +27,6 @@
     width: 100%;
     height: auto;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding-bottom: 20px; 
 }
 
 .line-break
@@ -32,7 +35,8 @@
     margin: auto;
 }
 
-.top-border{
+.top-border
+{
     background-color: darkred;
     max-width:100%;
     width: 100%;
@@ -40,89 +44,92 @@
     height: 100%;
 }
 
-.main-head{
+.main-head
+{
     text-align: center;
     font-weight: bold;
 }
 
-.personal-info-head{
+.personal-info-head
+{
+    text-indent: 10px;
     color:darkred;
-    padding-left: 10px;
 }
 
-.name-feilds {
+.name-feilds 
+{
     position: relative;
     display: flex;
     align-items: center;
     margin-bottom: 0;
-    padding-left: 10px;
+    gap: 180px; 
 }
 
-.name-input{
+.name-input
+{
     display: flex;
     flex-direction: row;
     max-width: 500px;
     width: 100%;
     column-gap:20px;
-    padding-left: 170px;
 }
 
-.first-name-group-span, .second-name-group-span{
+.first-name-group-span, .second-name-group-span
+{
     display: flex;
     flex-direction: column;
     min-height: 60px;
     height: 100%;
 }
 
-.first-name-group-span #first, .second-name-group-span #last{
+.first-name-group-span #first, .second-name-group-span #last
+{
     text-align: left;
 }
 
-.name-feilds input#fname {
-    max-width:210px ;
+.name-feilds input#fname , .name-feilds input#lname 
+{
+    min-width:165px ;
     width: 100%;
 }
 
-.name-feilds input#lname {
-    max-width:210px;
-    width: 100%;
-}
-
-.first-name-group-span #first, .second-name-group-span #last{
+.first-name-group-span #first, .second-name-group-span #last, .first-address-span, .second-address-span,
+.country-span, .city-span, .state-span, .zip-span
+{
     font-size:10px;
 }
 
-.email-group {
+.email-group 
+{
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-left: 10px;
-    padding-bottom: 25px;
+    gap:185px;
 }
 
-.email-label{
-    padding-right: 169px;
+.email-label, .education-label, .resume-label, .address-label, .phone-label, .hobby-label, .hobby-desc, .company-label,
+.job-label,.name-feild-label
+{
+    text-indent: 10px;
 }
 
-.email-group input#email {
-    max-width: 370px;
+.email-group input#email 
+{
+    max-width: 330px;
     width: 100%;
 }
 
-.education-group {
+.education-group 
+{
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-left: 10px;
-    padding-bottom: 25px;
+    gap:150px;
 }
 
-.education-label{
-    padding-right: 140px;
-}
-
-.select-education {
-    max-width:300px;
+.select-education 
+{
+    min-width:245px;
     width: 100%;
     min-height: 30px;
     height: 100%;
@@ -130,17 +137,19 @@
     font-weight: 500;
 }
 
-.education-group option {
+.education-group option 
+{
     padding: 8px;
 }
 
-
-
-.custom-select-container {
+.custom-select-container 
+{
     position: relative;
+    display: inline-block;
 }
 
-.custom-select-container select {
+.custom-select-container select 
+{
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -151,90 +160,90 @@
     outline: none;
 }
 
-.custom-select-container::after {
+.custom-select-container::after 
+{
     content: '';
     position: absolute;
     top: 50%;
-    right: 190px; 
     width: 0;
     height: 0;
     border: 7px solid transparent;
     border-top-color: black;
-    transform: translateY(-15px) rotate(1deg); 
+    transform:   translateX(-25px);  
 } 
 
-.resume-group {
+.resume-group 
+{
     display: flex;    
     flex-direction: row;
     align-items: center;
-    padding-left: 10px;
-    padding-bottom: 25px;
+    gap:165px;
 }
 
-.resume-label{
-    padding-right: 150px;
-}
-
-.resume-group input[type="file"] {
+.resume-group input[type="file"] 
+{
     border: 1px solid black;
     border-radius: 4px;
     font-size: 16px;
     background-color: #fff;
     padding:5px;
-    max-width:400px;
+    max-width:350px;
     width: 100%;
     color:rgb(146, 141, 141);
 }
 
-.address-group {
+.address-group 
+{
     display: flex;
     flex-direction: column;
 }
 
-.address-feilds {
+.address-feilds 
+{
     display: flex;
     flex-direction: column;
     position: relative;
 }
 
-.address-span-block{
+.address-span-block
+{
     display: flex;
     flex-direction: column;
 }
 
-.address-span-block .first-address-span, .address-span-block .second-address-span, .address-span-block .country-span{
+.address-span-block .first-address-span, .address-span-block .second-address-span,
+.country-name-span-group .country-span, .city-name-span-group .city-span , .state-name-span-group .state-span,
+.zip-name-span-group .zip-span
+{
     text-align: center;
 }
 
-.first-address{
+.address-span-block , .country-name-span-group, .city-group
+{
+    padding-left: 240px;
+}
+
+.first-address
+{
     display:flex;
     flex-direction: row;
+    gap:165px;
 }
 
-.address-label{
-    padding-left: 10px;
-    padding-right: 145px;
-}
-
-.first-address-name, .second-address-name{
-    max-width: 420px;
+.first-address-name, .second-address-name
+{
+    max-width: 365px;
     width: 100%;
 }
 
-.first-address-span, .second-address-span, .country-span{
-    font-size:10px;
+.second-address-name
+{
+    display: flex;
 }
 
-.second-address-block{
-    padding-left:218px;
-}
-
-.country-feilds{
-    padding-left: 218px;
-}
-
-.select-country{
-    max-width: 420px;
+.select-country
+{
+    max-width: 355px;
     width: 100%;
     min-height: 30px;
     height: 100%;
@@ -242,12 +251,14 @@
     font-weight: 500;
 }
 
- .custom-select-container2 {
+.custom-select-container2 
+{
     position: relative;
     display: inline-block;
 }
 
-.custom-select-container2 select {
+.custom-select-container2 select 
+{
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -258,7 +269,8 @@
     outline: none;
 }
 
-.custom-select-container2::after {
+.custom-select-container2::after
+{
     content: '';
     position: absolute;
     top: 50%;
@@ -275,177 +287,158 @@
     flex-direction: column;
 }
 
-.country-name-span-group .country-span
+.city-group
 {
-    text-align: center;
-}
-
-.city-group{
     display: flex;
     flex-direction: column;
 }
 
-.city-feilds{
+.city-feilds
+{
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-bottom:0;
     column-gap: 15px;
-    padding-left: 218px;
 }
 
-.city{
+.city
+{
     max-width: 250px;
     width: 100%;
 }
 
-.state{
+.state
+{
     max-width: 45px;
     width:100%;
 }
 
-.zip{
+.zip
+{
     max-width: 80px;
     width:100%;
 }
-.city-name-span-group , .state-name-span-group, .zip-name-span-group{
+
+.city-name-span-group , .state-name-span-group, .zip-name-span-group
+{
     display: flex;
     flex-direction: column;
 }
 
-.city-name-span-group .city-span , .state-name-span-group .state-span, .zip-name-span-group .zip-span{
-    text-align: center;
-}
-
-.city-span{
-    font-size: 10px; 
-}
-
-.state-span{
-    font-size: 10px;  
-}
-
-.zip-span{
-    font-size: 10px;  
-}
-
-.phone-group {
+.phone-group 
+{
     display: flex;
     align-items: center;
-    padding-top: 20px;
-    column-gap: 7px;
+    gap: 110px; 
 }
 
-.phone-label {
-    padding-left: 10px;
-    padding-right: 80px;
+.phone-input-group
+{
+    display: flex;
+    gap: 7px; 
 }
 
-.phNo{
-    max-width: 365px;
+.phNo
+{
+    min-width: 305px;
     width:100%;
 }
 
-.phCode{
+.phCode
+{
     max-width: 45px;
     width:100%;
 }
 
-.hobby-group {
-    padding-top: 25px;
+.hobby-group 
+{
     display: flex;
     flex-direction: column;
 }
 
-.hobby-label {
-    padding-left:10px ;
-}
-
-.hobby-desc{
-    padding-left: 10px;
-}
-
-.hobby{
-    max-width:95%;
+.hobby
+{
+    max-width:630px;
     width: 100%;
 }
 
-#precious-head{
+#precious-head
+{
     color:darkred;
-    padding-bottom: 25px;
-    padding-left:10px;
+    text-indent: 10px;
 }
 
-.employee-details-group {
+.employee-details-group 
+{
     display: flex;
     flex-direction: column;
     gap: 20px; 
 }
 
-.company-label, .job-label, .emp-stay-label, .emp-stay-here {
+.company-group
+{
+    display: flex;
+    gap: 110px;
+}
+
+.job-group
+{
+    display: flex;
+    gap: 170px;
+}
+
+.emp-stay-group-feilds
+{
+    display: flex;
+    gap: 70px;
+}
+
+.emp-stay-label{
+    max-width: 165px;
+    width: 100%;
     padding-left: 10px;
 }
 
-.company-label{
-    padding-right: 80px;
-}
-
-.job-label{
-    padding-right: 138px;
-}
-
-.emp-stay-label
+.company-name, .job-title
 {
-    padding-right: 52px;
-}
-
-.company-name{
-    max-width: 400px;
+    max-width: 360px;
     width:100%;
 }
 
-.job-title{
-    max-width: 400px;
+.emp-stay 
+{
+    max-width: 345px;
     width:100%;
 }
 
-.emp-stay {
-    max-width: 390px;
-    width:100%;
-}
-
-.first-reference-form{
+.first-reference-form
+{
     display: flex;
     flex-direction: column;
 }
 
-.first-ref-name-group , .second-ref-name-group, .first-ref-phone-group , .second-ref-phone-group{
-    padding-left: 10px;
+.first-ref-name-group , .second-ref-name-group, .first-ref-phone-group , .second-ref-phone-group
+{
+    display: flex;
+    gap:185px;
+    text-indent: 10px;
 }
 
-.phone-first, .phone-second, .name-first, .name-second{
-    max-width: 400px;
+.phone-first, .phone-second, .name-first, .name-second
+{
+    max-width: 370px;
     width:100%;
 }
 
-.name-first-label, .name-second-label{
-    padding-right: 160px;
-}
-    
-.phone-first-label, .phone-second-label{
-    padding-right: 157px;
-}
-
-.reference-first-head, .reference-second-head{
+.reference-first-head, .reference-second-head
+{
   color:darkred;
-  padding-left:10px;
+  text-indent: 10px;
 }
 
-.first-ref-name-group, .second-ref-name-group, .first-ref-phone-group, .second-ref-phone-group{
-    padding-bottom: 25px;
-}
-
-.apply{
+.apply
+{
     max-width: 100px;
     width:100%; 
     min-height: 40px;   
@@ -458,263 +451,31 @@
     display:block;
 }
 
+.spacing
+{
+    max-height: 25px;
+    height:100%;
+    opacity: 0;
+}
+
 @media screen and (max-width:1280px){
+    .form-container{
+        max-width: 52%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1024px){
     .form-container{
         max-width: 65%;
         width: 100%;
-    }
-    .name-group {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .name-feilds {
-        display: flex;
-        align-items: center;
-        margin-bottom: 0;
-        padding-left: 10px ;
-    }
-    
-    .name-feilds label {
-        max-width: 60px ;
-        width: 100%;
-    }
-    
-    .name-input{
-        display: flex;
-        flex-direction: row;
-        column-gap: 15px;
-        max-width: 450px;
-        width: 100%;
-        padding-left: 155px;
-       
-    }
-    
-    .name-feilds input#fname {
-        max-width:160px ;
-        width: 100%;
-    }
-    
-    .name-feilds input#lname {
-        max-width:160px;
-        width: 100%;
-    }
-    
-    .email-group input#email {
-        max-width: 300px;
-        width: 100%;
-    }
-    
-    .select-education {
-        max-width:250px;
-        width: 100%;
-    }
-
-    .education-label{
-        padding-right: 142px;
-    }
-
-    .custom-select-container::after {
-        transform: translateY(-15px) rotate(1deg); 
-        right: 180px; 
-    }
-
-    .resume-group input[type="file"] {
-        max-width:335px;
-        width: 100%;
-    }
-
-    .first-address-name, .second-address-name{
-        max-width: 365px;
-        width: 100%;
-    }
-    
-    .select-country{
-        max-width: 365px;
-        width: 100%;
-    }
-    
-    .city{
-        max-width: 210px;
-        width: 100%;
-    }
-
-    .state{
-        max-width: 40px;
-        width:100%;
-    }
-
-    .zip{
-        max-width: 70px;
-        width:100%;
-    }
-
-    .phone-label {
-        padding-right: 80px;
-    }
-
-    .phNo{
-        max-width: 330px;
-        width:100%;
-    }
-    
-    .phCode{
-        max-width: 45px;
-        width:100%;
-    }
-    
-    .company-name{
-        max-width: 380px;
-        width:100%;
-    }
-        
-    .job-title{
-        max-width: 380px;
-        width:100%;
-    }
-
-    .emp-stay {
-        max-width: 360px;
-        width:100%;
-    }
-
-    .phone-first, .phone-second, .name-first, .name-second{
-        max-width: 380px;
-        width:100%;
     }
 }
 
 @media screen and (max-width:980px){    
     .form-container{
-        max-width:70%;
+        max-width:90%;
         width: 100%;
-    }
-
-    .name-feilds label {
-        max-width: 5px ;
-        width: 100%;
-    }
-    
-    .name-input{
-        display: flex;
-        flex-direction: row;
-        column-gap: 15px;
-        max-width: 450px;
-        width: 100%;
-        padding-left: 100px;     
-    }
-    
-    .email-label{
-        padding-right: 60px;
-    }
-
-    .email-group input#email {
-        max-width: 300px;
-        width: 100%;
-    }
-
-    .education-label{
-        padding-right: 35px;
-    }
-
-    .custom-select-container::after {
-        right: 130px; 
-    }
-
-    .resume-label{
-        padding-right: 45px;
-    }
-
-    .resume-group input[type="file"] {
-        max-width:310px;
-        width: 100%;
-    }
-
-    .address-label{
-        padding-left: 10px;
-        padding-right: 45px;
-    }
-
-    .first-address-name, .second-address-name{
-        max-width: 335px;
-        width: 100%;
-    }
-
-    .second-address-block{
-        padding-left:118px;
-    }
-
-    .country-feilds{
-        padding-left: 118px;
-    }
-
-    .select-country{
-        max-width: 320px;
-        width: 100%;
-    }
-
-    .city-feilds{
-        padding-left: 118px;
-    }
-
-    .city{
-        max-width: 160px;
-        width: 100%;
-    }
-
-    .phone-label {
-        padding-right: 10px;
-    }
-
-    .phNo{
-        max-width: 250px;
-        width:100%;
-    }
-    
-    .phCode{
-        max-width: 45px;
-        width:100%;
-    }
-    
-    .company-label{
-        padding-right: 30px;
-    }
-    
-    .job-label{
-        padding-right: 90px;
-    }
-    
-    .emp-stay-label
-    {
-        padding-right: 4px;
-    }
-
-    .company-name{
-        max-width: 270px;
-        width:100%;
-    }
-        
-    .job-title{
-        max-width: 270px;
-        width:100%;
-    }
-
-    .emp-stay {
-        max-width: 270px;
-        width:100%;
-    }
-
-    .name-first-label, .name-second-label{
-        padding-right: 30px;
-    }
-        
-    .phone-first-label, .phone-second-label{
-        padding-right: 30px;
-    }
-
-    .phone-first, .phone-second, .name-first, .name-second{
-        max-width: 330px;
-        width:100%;
     }
 }
 
@@ -726,139 +487,137 @@
         max-width:99%;
         width: 100%;
     }
-  
+    .input-block-height
+    {
+        min-height: 14px;
+        height:100%;
+    }
+    .name-feilds{
+        gap:60px;
+    }
+    .name-feilds input#fname, .name-feilds input#lname{
+        min-width: 0;
+        max-width: 100px;
+        width: 100%;
+    }
     .name-input{
-        padding-left: 60px;
-       
+        gap:10px;
     }
-
-    .name-feilds input#fname {
-        max-width:115px ;
-        width: 100%;
+    .first-name-group-span, .second-name-group-span{
+        min-height: 50px;
+        height: 100%;
     }
-
-    .name-feilds input#lname {
-        max-width:115px;
-        width: 100%;
+    .email-group{
+        gap:60px;
     }
-
-
-    .email-label{
-        padding-right: 30px;
-    }
-
     .email-group input#email {
-        max-width: 245px;
+        max-width: 200px;
+        width: 100%;
+    }
+    .education-group{
+        gap:40px;
+    }
+    .select-education{
+        min-width: 160px;
         width: 100%;
     }
 
-    .education-label{
-        padding-right: 10px;
-    }
-
-    .select-education {
-        max-width:220px;
-        width: 100%;
-    }
-    
-    .resume-label{
-        padding-right: 15px;
+    .resume-group{
+        gap:48px;
     }
     .resume-group input[type="file"] {
-        max-width:250px;
+        max-width: 220px;
         width: 100%;
     }
-
-    .address-label{
-        padding-left: 10px;
-        padding-right: 17px;
+    .first-address{
+        gap:47px;
     }
-
     .first-address-name, .second-address-name{
-        max-width: 250px;
+        max-width: 240px;
         width: 100%;
     }
-
-    .second-address-block{
-        padding-left:75px;
-    }
-
-    .country-feilds{
-        padding-left: 75px;
-    }
-
     .select-country{
-        max-width: 250px;
+        max-width: 240px;
         width: 100%;
     }
-
-    .city-feilds{
-        padding-left: 75px;
+    .address-span-block , .country-name-span-group, .city-group
+    {
+        padding-left: 93px;
     }
-
     .city{
-        position: relative;
-        max-width: 130px;
+        max-width:100px;
+        width: 100%;
+    }
+    .city-feilds{
+        column-gap: 5px;
+    }
+    .state{
+        max-width: 20px;
         width: 100%;
     }
     .zip{
-        position: relative;
         max-width: 50px;
-        width:100%;
+        width: 100%;
     }
-    .state{
-        position: relative;
-        max-width: 30px;
-        width:100%;
+    .phone-group{
+        gap:15px;
     }
-
-    .phone-label {
-        padding-right: 0px;
-    }
-
     .phNo{
-        max-width: 170px;
-        width:100%;
+        min-width: 185px;
+        width: 100%;
     }
-    
-    .company-label{
-        padding-right: 10px;
+    .phCode{
+        max-width: 20px;
+        width: 100%;
     }
-    
-    .job-label{
-        padding-right: 55px;
+    .hobby{
+        max-width: 320px;
+        width: 100%;
     }
-
-    .emp-stay-label
-    {
-        padding-right: 0px;
+    .company-group{
+        gap:18px;
     }
-
-    .company-name{
-        max-width: 200px;
-        width:100%;
+    .job-group{
+        gap:50px;
     }
-        
-    .job-title{
-        max-width: 200px;
-        width:100%;
+    .emp-stay-group-feilds{
+        gap: 3px;
     }
-    .emp-stay {
+    .company-name, .job-title{
         max-width: 190px;
-        width:100%;
+        width: 100%;
     }
-
-    .name-first-label, .name-second-label{
-        padding-right: 10px;
+    .emp-stay{
+        max-width: 185px;
+        width: 100%;
     }
-        
-    .phone-first-label, .phone-second-label{
-        padding-right: 10px;
+    .first-ref-name-group, .second-ref-name-group, .first-ref-phone-group, .second-ref-phone-group
+    {
+        gap:50px;
     }
-
-    .phone-first, .phone-second, .name-first, .name-second{
-        max-width: 250px;
-        width:100%;
+    .phone-first, .phone-second, .name-first, .name-second
+    {
+        max-width: 220px;
+        width: 100%;
+    }
+    #precious-head, .personal-info-head, .reference-first-head, .reference-second-head
+    {
+        font-size: 15px;
+    }   
+    .email-label, .education-label, .resume-label, .address-label, .phone-label, .hobby-label,
+     .hobby-desc, .company-label, .job-label, .emp-stay-label, .name-feild-label
+    {
+        font-size: 9px;
+    }
+    .first-name-group-span #first, .second-name-group-span #last, .first-address-span, 
+    .second-address-span, .country-span, .city-span, .state-span, .zip-span
+    {
+        font-size: 7px;
+    }
+     .emp-stay-label
+    {
+        max-width: 85px;
+        width: 100%;
+        padding-left: 10px;
     }
 }
-

@@ -16,10 +16,10 @@
             <h1 class="main-head">Job Application</h1>
             <h2 class="personal-info-head">Personal Information</h2>
             <form id="personal-information">
-
+                
                 <div class="name-group">
                     <div class="name-feilds">
-                        <label for="fname">Name</label>        
+                        <label class="name-feild-label" for="fname">Name</label>        
                         <div class="name-input">
                             <div class="first-name-group-span">
                                 <input class="input-block-height" id="fname" type="text" name="fname">
@@ -38,29 +38,35 @@
                     <label class="email-label" for="email">Email</label>
                     <input class="input-block-height" type="text" id="email" name="email" placeholder="user@example.com">
                 </div>
-
-                <div class="education-group custom-select-container">
+                <hr class="spacing">
+                
+                <div class="education-group">
                     <label class="education-label" for="select-education">Education</label>
-                    <select class="select-education" name="edu">
-                        <option value="none" selected>Please Choose</option>
-                        <option value="BSSE">BSSE</option>
-                        <option value="BSCS">BSCS</option>
-                        <option value="BSIT">BSIT</option>
-                        <option value="BSDS">BSDS</option>
-                    </select>
+                    <div class="custom-select-container">
+                        <select class="select-education" name="edu">
+                            <option value="none" selected>Please Choose</option>
+                            <option value="BSSE">BSSE</option>
+                            <option value="BSCS">BSCS</option>
+                            <option value="BSIT">BSIT</option>
+                            <option value="BSDS">BSDS</option>
+                        </select>
+                    </div>   
                 </div>
 
+                <hr class="spacing">
                 <div class="resume-group">
                     <label class="resume-label" for="resume">Resume</label>
                     <input class="input-block-height" id="resume" name="resume" type="file">
                 </div>
+                <hr class="spacing">
+                
+                    <div class="first-address">
+                                <label class="address-label">Address</label>
+                                <input class="first-address-name input-block-height" name="first-address-name">
+                    </div>
 
                 <div class="address-group">
                     <div class="address-feilds">
-                        <div class="first-address">
-                            <label class="address-label">Address</label>
-                            <input class="first-address-name input-block-height" name="first-address-name">
-                        </div>
 
                         <div class="address-span-block">
                             <span class="first-address-span">Address 1</span>
@@ -69,6 +75,7 @@
                             </div> 
                                 <span class="second-address-span">Address 2</span>
                         </div>
+
                     </div>
 
                     <div class="country-name-span-group">
@@ -81,8 +88,7 @@
                                     <option value="Turkey">Turkey</option>
                                 </select>
                             </div>
-
-                    
+           
                             <span class="country-span">Country</span>
                     </div>
 
@@ -107,11 +113,16 @@
                     </div>
                 </div>
 
+                <hr class="spacing">
+
                 <div class="phone-group">
                     <label class="phone-label">Phone Number</label>
-                    <input class="phCode input-block-height" name="phCode">
-                    <input class="phNo input-block-height" name="phNo">
+                    <div class="phone-input-group">
+                        <input class="phCode input-block-height" name="phCode">
+                        <input class="phNo input-block-height" name="phNo">
+                    </div>
                 </div>
+                <hr class="spacing">
 
                 <div class="hobby-group">
                     <label class="hobby-label" for="hobby">What are your hobbies?</label>
@@ -122,7 +133,7 @@
             </form>
 
             <h2 id="precious-head">Precious/Current Employment Details</h2>
-
+            <hr class="spacing">
             <form class="employee-details">
                 <div class="employee-details-group">
                     <div class="company-group">
@@ -136,11 +147,12 @@
                     </div>
 
                     <div class="emp-stay-group">
-                        <label class="emp-stay-label">How long were you</label>
-                        <input class="emp-stay input-block-height" name="emp-stay">
-                        <hr class="line-break">
-                        <label class="emp-stay-here">here?</label>
+                        <div class="emp-stay-group-feilds">
+                            <label class="emp-stay-label">How long were you here?</label>
+                            <input class="emp-stay input-block-height" name="emp-stay">
+                        </div>
                     </div>
+
                 </div>
             </form>
 
@@ -152,11 +164,12 @@
                     <label class="name-first-label">Name</label>
                     <input class="name-first input-block-height" name="name-first">
                 </div>
-
+                <hr class="spacing">
                 <div class="first-ref-phone-group">
                     <label class="phone-first-label">Phone</label>
                     <input class="phone-first input-block-height" name="phone-first">
                 </div>
+                <hr class="spacing">
             </form>
 
             <h2 class="reference-second-head">Reference #2</h2>
@@ -166,16 +179,17 @@
                     <label class="name-second-label">Name</label>
                     <input class="name-second input-block-height" name="name-second">
                 </div>
-
+                <hr class="spacing">
                 <div class="second-ref-phone-group">
                     <label class="phone-second-label"> Phone</label>
                     <input class="phone-second input-block-height" name="phone-second">
                 </div>
-
+                <hr class="spacing">
                 <div class="form-group">
                     <button class="apply">Apply</button>
-                </div>
+                </div>         
             </form>
+            <hr class="spacing">
         </div>
     </div>
 </body>
